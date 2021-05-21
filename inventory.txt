@@ -1,0 +1,9 @@
+group: devops
+  hostname: ubuntu
+    ip: 100.25.181.115
+    key: /home/avi9800/.ssh/id_rsa
+
+  hostname: avi9800
+    ip: 34.201.242.52
+    key: /home/avi9800/.ssh/id_rsa
+group: devops/
