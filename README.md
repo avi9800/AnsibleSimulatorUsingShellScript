@@ -3,16 +3,16 @@
 Like ansible you need to create a custom tool which can be used to manage and configure remote instance.
 1. User Module
 This tool need to have a user module using which you can able to create a user, delete a user and modify it.
-./ot-scm user create prashant -s /bin/bash
-./ot-scm user delete prashant
-./ot-scm user modify prashant -s /bin/nologin
+./ot-scm user create avishek -s /bin/bash
+./ot-scm user delete avishek
+./ot-scm user modify avishek -s /bin/nologin
 2. File Module 
 This module will be used to create, delete a file and directory, symbolic link etc.
-./ot-scm file state=touch path=/opt/prashant owner=prashant group=adm
-./ot-scm file state=absent path=/opt/prashant owner=prashant group=adm
-./ot-scm file state=directory path=/opt/prashant 
-./ot-scm file state=link path=/opt/prashant src=/home/opstree/new
-./ot-scm file state=absent path=/opt/prashant 
+./ot-scm file state=touch path=/opt/avishek owner=avishek group=adm
+./ot-scm file state=absent path=/opt/avishek owner=avishek group=adm
+./ot-scm file state=directory path=/opt/avishek 
+./ot-scm file state=link path=/opt/avishek src=/home/user/new
+./ot-scm file state=absent path=/opt/avishek 
 3. Package Module
 Add this module in your tool and it will be used to install packages in remote instance.
 ./ot-scm package install java-default
